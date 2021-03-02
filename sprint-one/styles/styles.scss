@@ -1,0 +1,6 @@
+@use './partials/partials.scss';
+
+.navbar {
+    background-color: $dark-gray;
+    @include flex-center;
+}
