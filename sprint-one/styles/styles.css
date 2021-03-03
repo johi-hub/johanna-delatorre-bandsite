@@ -46,4 +46,30 @@
 
 #aboutthemusicians {
   color: #323232;
+}
+
+.header2,
+.header3 {
+  font-family: "bold";
+}
+
+.subheader {
+  font-family: "bold";
+}
+
+.paragraph {
+  font-family: "regular";
+  font-weight: lighter;
+  font-size: small;
+}
+
+.getintouch {
+  font-family: "bold";
+}
+
+.subheader__richard {
+  font-family: "bold";
+}
+.subheader__richard__richard--sub {
+  font-family: "regular";
 }/*# sourceMappingURL=styles.css.map */

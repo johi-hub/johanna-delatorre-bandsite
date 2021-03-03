@@ -20,8 +20,6 @@ $silver: #AFAFAF
         font-family: "regular";
         color: white;
         display: flex;
-         
-        
     }
    
 }
@@ -57,4 +55,37 @@ $silver: #AFAFAF
 
 #aboutthemusicians {
     color: $darkgray;
+}
+
+.header2 ,
+.header3 {
+    font-family: "bold"
+}
+
+.subheader {
+    font-family: "bold"
+}
+
+.paragraph {
+    font-family: "regular";
+    font-weight: lighter;
+    font-size: small;
+}
+
+#image1 {
+    @include mobile {
+    }
+}
+
+.getintouch {
+    font-family: "bold"
+}
+
+.subheader__richard {
+    font-family: "bold";
+
+    &__richard--sub {
+        font-family: "regular";
+        
+    }
 }
