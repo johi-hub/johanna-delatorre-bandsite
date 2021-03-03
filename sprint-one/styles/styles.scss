@@ -1,10 +1,12 @@
 @use "./partials/partials" as *;
 
-* {
-    font-family: "Regular";
-}
+// * {
+//     font-family: "Regular";
+// }
 
 $darkgray: #323232
+;
+$silver: #AFAFAF
 ;
 
 .navbar {
@@ -41,8 +43,18 @@ $darkgray: #323232
 }
 
 #hero-text{
+    font-family: "bold";
     font-weight: 500;
+    font-size: x-large;
     color: white;
     max-width: 40vh;
+    padding-left: 16px;
 }
 
+.header {
+    font-family: "bold";
+}
+
+#aboutthemusicians {
+    color: $darkgray;
+}

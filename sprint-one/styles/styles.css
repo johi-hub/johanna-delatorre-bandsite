@@ -2,10 +2,10 @@
   font-family: "regular";
   src: url("../../assets/fonts/AvenirNextProLT/Regular.otf") format("opentype");
 }
-* {
-  font-family: "Regular";
+@font-face {
+  font-family: "bold";
+  src: url("../../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("opentype");
 }
-
 .navbar {
   background-color: #323232;
   display: flex;
@@ -32,7 +32,18 @@
   align-items: center;
 }
 #hero-text {
+  font-family: "bold";
   font-weight: 500;
+  font-size: x-large;
   color: white;
   max-width: 40vh;
+  padding-left: 16px;
+}
+
+.header {
+  font-family: "bold";
+}
+
+#aboutthemusicians {
+  color: #323232;
 }/*# sourceMappingURL=styles.css.map */
