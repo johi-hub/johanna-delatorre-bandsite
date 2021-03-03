@@ -1,4 +1,38 @@
+@font-face {
+  font-family: "regular";
+  src: url("../../assets/fonts/AvenirNextProLT/Regular.otf") format("opentype");
+}
+* {
+  font-family: "Regular";
+}
+
 .navbar {
   background-color: #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/*# sourceMappingURL=styles.css.map */
+.navbar__container--right {
+  font-family: "regular";
+  color: white;
+  display: flex;
+}
+
+.nav-button {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#hero-image {
+  background-image: url(../assets/images/hero-image.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+#hero-text {
+  font-weight: 500;
+  color: white;
+  max-width: 40vh;
+}/*# sourceMappingURL=styles.css.map */
