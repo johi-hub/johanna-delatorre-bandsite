@@ -77,15 +77,22 @@ $silver: #AFAFAF
     }
 }
 
+footer {
+    background-color: $darkgray;
+}
+
 .getintouch {
-    font-family: "bold"
+    font-family: "bold";
+    color: white;
 }
 
 .subheader__richard {
+    color: white;
     font-family: "bold";
 
-    &__richard--sub {
+}
+p {
         font-family: "regular";
-        
-    }
+        font-weight: lighter;
+        font-size: small;
 }

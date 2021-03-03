@@ -63,13 +63,22 @@
   font-size: small;
 }
 
+footer {
+  background-color: #323232;
+}
+
 .getintouch {
   font-family: "bold";
+  color: white;
 }
 
 .subheader__richard {
+  color: white;
   font-family: "bold";
 }
-.subheader__richard__richard--sub {
+
+p {
   font-family: "regular";
+  font-weight: lighter;
+  font-size: small;
 }/*# sourceMappingURL=styles.css.map */
