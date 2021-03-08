@@ -1,6 +1,7 @@
 $darkgray: #323232;
-
-
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
 
 @mixin tablet {
     @media (min-width: 600px) and (max-height: 1024px){
@@ -10,22 +11,28 @@ $darkgray: #323232;
 
 @mixin mobile {
     @media (min-width: 375px) and (max-height: 667px) {
-        @content;
-    }
+            @content;
+        }
 }
 
 @mixin desktop {
     @media (min-width: 811px) and (max-height: 625px) {
-        @content; 
+        @content;
     }
 }
 
 @font-face {
-    font-family: "regular";
-    src: url("../../assets/fonts/AvenirNextProLT/Regular.otf") format("opentype")
+    font-family: "Avenir";
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf") format("opentype");
+    
 }
 
 @font-face {
     font-family: "bold";
-    src: url("../../assets/fonts/AvenirNextProLT/Linotype\ -\ AvenirNextLTPro-Bold.otf") format("opentype")
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "demi";
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf") format("opentype");
 }

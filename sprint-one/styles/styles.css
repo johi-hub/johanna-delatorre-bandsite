@@ -1,84 +1,159 @@
 @font-face {
-  font-family: "regular";
-  src: url("../../assets/fonts/AvenirNextProLT/Regular.otf") format("opentype");
+  font-family: "Avenir";
+  src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "bold";
-  src: url("../../assets/fonts/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "demi";
+  src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf") format("opentype");
+}
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   background-color: #323232;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+}
+.navbar__container--left {
+  padding-bottom: 5px;
 }
 .navbar__container--right {
-  font-family: "regular";
   color: white;
   display: flex;
+  -webkit-padding-before: inherit;
+          padding-block-start: inherit;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.nav-button {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-#hero-image {
-  background-image: url(../assets/images/hero-image.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 30vh;
-  display: flex;
-  align-items: center;
-}
 #hero-text {
-  font-family: "bold";
-  font-weight: 500;
-  font-size: x-large;
   color: white;
-  max-width: 40vh;
-  padding-left: 16px;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: "bold";
+  padding-left: 15px;
 }
 
-.header {
-  font-family: "bold";
+span {
+  display: table;
+  padding-top: 10px;
 }
 
 #aboutthemusicians {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
   color: #323232;
+  font-family: "bold";
 }
 
-.header2,
-.header3 {
-  font-family: "bold";
+body {
+  font-family: "Avenir";
+}
+
+#hero-image {
+  background-image: url(../assets/images/stage-hero-image.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.image-container {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutthemusicianspicture {
+  height: 35vh;
+  width: 90%;
+}
+.header2 {
+  font-family: "demi";
+  color: #323232;
+  padding-top: 25px;
+  padding-left: 15px;
+  width: 90%;
 }
 
 .subheader {
-  font-family: "bold";
+  font-family: "demi";
+  color: #323232;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+
+.header3 {
+  font-family: "demi";
+  color: #323232;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  width: 90%;
+  font-size: 21px;
 }
 
 .paragraph {
-  font-family: "regular";
-  font-weight: lighter;
-  font-size: small;
+  font-family: "Avenir";
+  color: #323232;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.main__container--bottom {
+  background-color: #FAFAFA;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+#photogallerytext {
+  padding-top: 25px;
+}
+
+.gallery {
+  width: 90%;
 }
 
 footer {
   background-color: #323232;
 }
 
+.littleicons_container {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
+}
+
 .getintouch {
   font-family: "bold";
   color: white;
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 15px;
 }
 
-.subheader__richard {
+.subheader {
   color: white;
-  font-family: "bold";
+  font-family: "demi";
 }
-
-p {
-  font-family: "regular";
-  font-weight: lighter;
-  font-size: small;
+.subheader__richard--sub {
+  color: white;
+  font-family: "Avenir";
+}
+.subheader__marsha--sub {
+  color: white;
+  font-family: "Avenir";
 }/*# sourceMappingURL=styles.css.map */
