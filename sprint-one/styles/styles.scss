@@ -61,8 +61,7 @@ body {
     height:40vh;
     display:flex;
     align-items:center;
-    @include mobile {
-    }
+    
 }
 
 .image-container {
@@ -72,10 +71,9 @@ body {
     justify-content: center;
 }
 .aboutthemusicianspicture {
-    @include mobile {
-    }
     height: 35vh;
     width:90%;
+    
 }
 
 .header2 {
@@ -116,6 +114,18 @@ body {
     margin-top: 50px;
     padding-bottom: 50px;
     padding-left:50px;
+    @include tablet {
+        display:table;
+        justify-content: flex-start;
+    }
+    &.gallery {
+        @include tablet {
+            width: 20vw;
+            height: 20vw;
+        }
+
+    }
+    
 }
 
 #photogallerytext {
