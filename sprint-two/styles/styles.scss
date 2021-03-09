@@ -29,7 +29,8 @@
     }
 }
 
-#hero-text {
+#hero-text,
+#shows-text {
     color: white;
     font-size: xx-large;
     font-weight: bolder;
@@ -62,6 +63,15 @@ body {
     display:flex;
     align-items:center;
     
+}
+
+#shows-image {
+    background-image: url(../../sprint-one/assets/images/neon-sign.jpg);
+    background-size: cover;
+    width:100vw;
+    height:40vh;
+    display:flex;
+    align-items:center;
 }
 
 .image-container {
@@ -184,4 +194,17 @@ footer {
     &__text {
         border: 1px solid black;
     }
+}
+.soundcloud-song {
+    width: 100%;
+    justify-self: center;
+}
+.soundcloud-song__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.shows-title {
+    padding-top: 50px;
 }
