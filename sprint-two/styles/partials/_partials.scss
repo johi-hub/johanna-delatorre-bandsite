@@ -1,0 +1,38 @@
+$darkgray: #323232;
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+
+@mixin tablet {
+    @media (min-width: 600px) and (max-height: 1024px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (min-width: 375px) and (max-height: 667px) {
+            @content;
+        }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 811px) and (max-height: 625px) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf") format("opentype");
+    
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "demi";
+    src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf") format("opentype");
+}
