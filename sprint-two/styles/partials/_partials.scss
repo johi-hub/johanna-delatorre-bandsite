@@ -3,36 +3,132 @@ $silver: #AFAFAF;
 $mercury: #E1E1E1;
 $alabaster: #FAFAFA;
 
+
+//displays// 
+
 @mixin tablet {
-    @media (min-width: 600px) and (max-height: 1024px){
+
+    @media screen and (min-width: 48em) and (max-height: 64em) //768px and 1024px 
+    {
         @content;
     }
 }
 
 @mixin mobile {
-    @media screen and (min-width: 375px) and (max-height: 667px) {
+
+    @media screen and (min-width: 23.438em) and (max-height: 41.688em) //375px and 668px 
+    {
             @content;
-        }
+    }
 }
 
 @mixin desktop {
-    @media screen and (min-width: 811px) and (max-height: 625px) {
+
+    @media screen and (min-width: 48em) and (max-height: 67.5em) //768px and 1080px 
+    {
         @content;
     }
 }
 
+
+//fonts// 
+
 @font-face {
+
     font-family: "Avenir";
     src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf") format("opentype");
-    
 }
 
 @font-face {
+
     font-family: "bold";
     src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf") format("opentype");
 }
 
 @font-face {
+
     font-family: "demi";
     src: url("../../../AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf") format("opentype");
+}
+
+//properties//
+
+@mixin flex-start {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin flex-wrap {
+
+    display: flex;
+    flex-wrap:wrap;
+}
+
+@mixin flex-center {
+
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-align-items-center {
+
+    display: flex;
+    align-items: center;
+}
+
+//*FONT STYLES*//
+@mixin darkgray-demi {
+
+    font-family: "demi";
+    color: $darkgray;
+}
+
+@mixin white-demi {
+
+    color: white;
+    font-family: "demi";
+}
+
+@mixin white-avenir {
+    color: white;
+    font-family: "Avenir"
+}
+
+@mixin darkgray-avenir {
+
+    font-family: "Avenir";
+    color: $darkgray;
+}
+
+@mixin bold-white {
+
+    color:white;
+    font-family: "bold";
+}
+
+@mixin bold-darkgray {
+
+    color: $darkgray;
+    font-family: "bold";
+}
+
+
+//paddings//
+
+@mixin button-padding {
+
+    padding-right: 5rem;
+    padding-left: 2.5rem;
+}
+
+@mixin default-padding {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@mixin about-the-musicians-padding {
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
 }

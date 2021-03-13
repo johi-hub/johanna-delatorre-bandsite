@@ -16,15 +16,34 @@
   margin: 0;
 }
 
+body {
+  font-family: "Avenir";
+}
+
+span {
+  display: table;
+  padding-top: 0.625rem;
+}
+
 .navbar {
   background-color: #323232;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
+  padding: 1.25rem;
 }
 .navbar__container--left {
   padding-bottom: 5px;
+  padding-top: 0.625rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 48em) and (max-height: 67.5em) {
+  .navbar__container--left {
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .navbar__container--left {
+    padding-right: 3rem;
+  }
 }
 .navbar__container--right {
   color: white;
@@ -32,122 +51,197 @@
   -webkit-padding-before: inherit;
           padding-block-start: inherit;
   width: 100%;
-  justify-content: space-around;
 }
-
-#hero-text,
-#shows-text {
-  color: white;
-  font-size: xx-large;
-  font-weight: bolder;
-  font-family: "bold";
-  padding-left: 15px;
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .navbar__container--right {
+    justify-content: space-around;
+  }
 }
-
-span {
-  display: table;
-  padding-top: 10px;
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-
-#aboutthemusicians {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  color: #323232;
-  font-family: "bold";
-}
-
-body {
-  font-family: "Avenir";
-}
-
-#hero-image {
-  background-image: url(../assets/images/stage-hero-image.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-}
-
-#shows-image {
-  background-image: url(../../sprint-one/assets/images/neon-sign.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-}
-
-.image-container {
-  width: 100%;
-  height: 35vh;
-  display: flex;
-  justify-content: center;
-}
-
-.aboutthemusicianspicture {
-  height: 35vh;
-  width: 90%;
-}
-
-.header2 {
-  font-family: "demi";
-  color: #323232;
-  padding-top: 25px;
-  padding-left: 15px;
-  width: 90%;
-}
-
-.subheader {
-  font-family: "demi";
-  color: #323232;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-}
-
-.header3 {
-  font-family: "demi";
-  color: #323232;
-  padding-left: 15px;
-  padding-bottom: 20px;
-  width: 90%;
-  font-size: 21px;
-}
-
-.paragraph {
-  font-family: "Avenir";
-  color: #323232;
-  padding-left: 15px;
-  width: 90%;
-}
-
-.main__container--bottom {
-  background-color: #FAFAFA;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-}
-@media (min-width: 600px) and (max-height: 1024px) {
-  .main__container--bottom {
-    display: table;
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .navbar {
+    display: flex;
     justify-content: flex-start;
   }
 }
-@media (min-width: 600px) and (max-height: 1024px) {
-  .main__container--bottom.gallery {
-    width: 20vw;
-    height: 20vw;
+@media screen and (min-width: 48em) and (max-height: 67.5em) {
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .navbar #button1 {
+    padding-right: 5rem;
+    padding-left: 2.5rem;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 67.5em) {
+  .navbar #button1 {
+    padding-right: 5rem;
+    padding-left: 2.5rem;
   }
 }
 
-#photogallerytext {
-  padding-top: 25px;
+.hero-image {
+  background-image: url(../assets/images/concert_background_image.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .hero-image {
+    width: 100%;
+    height: 40vh;
+  }
+}
+.hero-image__text {
+  color: white;
+  font-family: "bold";
+  font-weight: bolder;
+  font-size: xx-large;
+  padding-left: 1rem;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .hero-image__text {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.gallery {
+.main__container--top {
+  height: auto;
+}
+.main__container--top .aboutthemusicians-text {
+  color: #323232;
+  font-family: "bold";
+}
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .main__container--top .aboutthemusicians-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .main__container--top .aboutthemusicians-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+  }
+}
+.main__container--top .aboutthemusicans-container {
+  min-width: 23.438em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.main__container--top .aboutthemusicans-image {
+  width: 100vw;
+  height: auto;
+}
+
+.main__container--bottom {
+  height: auto;
+}
+.main__container--bottom .header2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "demi";
+  color: #323232;
+  padding-top: 1.563rem;
   width: 90%;
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .main__container--bottom .header2 {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.main__container--bottom .subheader {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "demi";
+  color: #323232;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+.main__container--bottom .header3 {
+  font-family: "demi";
+  color: #323232;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.313rem;
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .main__container--bottom .header3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.main__container--bottom .paragraph-container .paragraph1,
+.main__container--bottom .paragraph-container .paragraph2 {
+  display: table-cell;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: "Avenir";
+  color: #323232;
+  width: auto;
+}
+.gallery-section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.gallery-section #photogallerytext {
+  color: #323232;
+  font-family: "bold";
+  padding-top: 1.563rem;
+}
+.gallery-section .gallery {
+  width: 15rem;
+  height: auto;
+}
+.gallery-section .gallery_container {
+  background-color: #FAFAFA;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+}
+.comment-box .comment-box__header {
+  padding-top: 2rem;
+  padding-bottom: 1.875rem;
+  color: #323232;
+  font-family: "bold";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.comment-box__form {
+  display: flex;
+  flex-direction: column;
+}
+.comment-box__input {
+  border: 1px solid black;
+  width: 50%;
+}
+.comment-box__text {
+  border: 1px solid black;
+  width: 50%;
 }
 
 footer {
@@ -157,16 +251,15 @@ footer {
 .littleicons_container {
   display: flex;
   justify-content: space-around;
-  padding-right: 50px;
+  padding-right: 3.125rem;
 }
 
 .getintouch {
-  font-family: "bold";
   color: white;
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 15px;
+  font-family: "bold";
+  font-size: 3.125rem;
+  padding-top: 3.125rem;
+  padding-bottom: 1.25rem;
 }
 
 .subheader {
@@ -182,32 +275,30 @@ footer {
   font-family: "Avenir";
 }
 
-.comment-box {
-  display: flex;
-  flex-direction: column;
-}
-.comment-box__form {
-  display: flex;
-  flex-direction: column;
-}
-.comment-box__input {
-  border: 1px solid black;
-}
-.comment-box__text {
-  border: 1px solid black;
+#shows-image {
+  background-image: url(../../sprint-one/assets/images/neon-sign.jpg);
 }
 
-.soundcloud-song {
-  width: 100%;
-  justify-self: center;
+#shows-image-text {
+  color: white;
+  font-family: "bold";
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 .soundcloud-song__container {
   display: flex;
-  justify-content: center;
+  align-self: flex-end;
   width: 100%;
 }
 
 .shows-title {
-  padding-top: 50px;
+  padding-top: 3.125rem;
+}
+
+#shows {
+  padding-top: 1.563rem;
+  padding-bottom: 1.563rem;
+  color: #323232;
+  font-family: "bold";
 }/*# sourceMappingURL=styles.css.map */

@@ -36,3 +36,6 @@ let handleSubmit = (e) => {
 form.addEventListener("submit", handleSubmit);
 
 newComment(commentArray)
+
+
+//
