@@ -232,19 +232,52 @@ span {
 
     display:flex;
     flex-direction:column;
+
     &__form {
+
     display:flex;
     flex-direction: column;
+    width: 60%;
+    align-self: center;
     }
+
     &__input {
-        border: 1px solid black;
-        width: 50%;
+
+        border: 2px solid $darkgray;
+        border-radius: .2rem;
     }
     &__text {
-        border: 1px solid black;
-        width: 50%;
+
+        border: 2px solid $darkgray;
+        border-radius: .2rem;
+    }
+
+    &__label {
+
+        font-size: smaller;
+        color: silver;
+    }
+
+.comment-box-parent{
+    display: flex;
+
+    .avatar {
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin-top: .5rem;
+        margin-right: 1rem;
+    }
+
+    .comment-parent{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
+
+}
+
+
 
 footer {
 

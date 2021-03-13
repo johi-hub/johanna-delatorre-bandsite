@@ -79,12 +79,22 @@
     <div class="comment-box">
         <h1 class="comment-box__header">Join the Conversation</h1>
     <form class="comment-box__form">  
-        <img src="" alt="avatar">
-        <label class="comment-box__label" for="username">Name</label>
-        <input class="comment-box__input" id="username" name="username">
-        <label class="comment-box__label" for="comment">Comment</label>
-        <textarea class="comment-box__text" id="comment" name="comment"></textarea> 
-        <button type="submit">COMMENT</button>
+        <div class="comment-box-parent">
+            <div class="avatar-container">
+                <img class="avatar" src="./assets/images/hipster-boy.jpg" alt="avatar">
+            </div>
+            <div class="name-label-container">
+                <div class="label-parent">
+                    <label class="comment-box__label" for="username">NAME</label>
+                    <input class="comment-box__input" id="username" name="username">
+                </div>
+                <div class="comment-parent">
+                    <label class="comment-box__label" for="comment">COMMENT</label>
+                    <textarea class="comment-box__text" id="comment" name="comment"></textarea> 
+                </div>
+                <button type="submit">COMMENT</button>
+            </div>
+        </div>
     </form>
     <div class="comment-box__comments"></div>
     </div>

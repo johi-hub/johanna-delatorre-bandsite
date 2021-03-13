@@ -234,14 +234,34 @@ span {
 .comment-box__form {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  align-self: center;
 }
 .comment-box__input {
-  border: 1px solid black;
-  width: 50%;
+  border: 2px solid #323232;
+  border-radius: 0.2rem;
 }
 .comment-box__text {
-  border: 1px solid black;
-  width: 50%;
+  border: 2px solid #323232;
+  border-radius: 0.2rem;
+}
+.comment-box__label {
+  font-size: smaller;
+  color: silver;
+}
+.comment-box .comment-box-parent {
+  display: flex;
+}
+.comment-box .comment-box-parent .avatar {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+.comment-box .comment-box-parent .comment-parent {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer {
