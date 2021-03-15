@@ -74,7 +74,7 @@ span {
     }
 }
 
-//main top//
+//top part of main//
 
 .main-container__top {
 
@@ -158,6 +158,7 @@ span {
 }
 
 //soundcloud debris//
+
 iframe {
 
     width: fit-content;
@@ -172,6 +173,10 @@ iframe {
     @include bold-darkgray;
     @include default-padding;
 }
+
+
+//footer//
+
 
 footer {
 
@@ -236,22 +241,6 @@ footer {
         }
     }
 }
-
-//"bandsite" logo located in the footer//
-// .bandsite-logo-footer { 
-
-//     height: 1rem;
-
-//     @include mobile {
-
-//         display: none;
-//     }
-
-//     @include tablet {
-
-//         display: none;
-//     }
-// }
 
 .contacts__container {
 
