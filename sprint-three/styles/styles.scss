@@ -141,7 +141,7 @@ span {
             @include flex-center;
             position: absolute;
             padding-left: 1rem;
-            padding-top: 5rem;
+            padding-top: 2rem;
         }
 
         //css that came with the sc link//
@@ -167,445 +167,129 @@ iframe {
 .shows-title {
 
     padding-top: 3.125rem;
-}
-
-#shows {
-
     padding-top: 1.563rem;
     padding-bottom: 1.563rem;
     @include bold-darkgray;
+    @include default-padding;
 }
 
-//
+footer {
 
-// .main__container--top {
+    background-color: $darkgray;
+}
 
-//     height: auto;
+.getintouch {
 
-//     .aboutthemusicians-text {
+    @include default-padding;
+    padding-top: 3.125rem;
+    padding-bottom: 1.25rem;
 
-//             @include bold-darkgray;
-//             @include default-padding;
-//             @include about-the-musicians-padding;
-//         }
+    @include desktop {
 
-//     .aboutthemusicans-container {
-
-//         min-width: 23.438em;
-//         height: auto;
-//         @include flex-center;
-//     }
-
-//     .aboutthemusicans-image {
-//         width: 100vw;
-//         height: auto;
-
-//         @include desktop {
-
-//             width: 50%;
-//             height:auto;
-//         }
-
-//         @include tablet {
-
-//             width: 100%;
-//             height: auto;
-//         }
-//     }
-// }
-
-// //
-
-// .aboutthemusicians {
-
-//     display: grid;
-// .main__container--bottom {
-
-//     height: auto;
-
-//     @include desktop {
-
-//         display: contents;
-//         width: 50%;
-//     }
-//     .header2 {
-
-//         @include default-padding;
-//         @include darkgray-demi;
-//         padding-top: 1.563rem;
-//         width: 90%;
-
-//         @include desktop {
-
-//             display: flex;
-//             width: 50%;
-//             justify-self: center;
-//         }
-        
-//         @include tablet {
-//             height: 30%;
-//             width: 90%;
-//             justify-self: flex-start;
-//             @include flex-wrap;
-//         }
-//     }
-
-//     .subheader {
-
-//         @include default-padding;
-//         @include darkgray-demi;
-
-//         @include desktop {
-
-//             display: flex;
-//             width: 50%;
-//             justify-self: center;
-//         }
-
-//         @include tablet {
-
-//             justify-self: flex-start;
-//         }
-//         padding-top: 1.875rem;
-//         padding-bottom: 1.875rem;
-//     }
-
-//     .header3 {
-
-//         @include darkgray-demi;
-//         padding-bottom: 1.25rem;
-//         @include default-padding;
-//         font-size: 1.313rem;
-
-//         @include desktop {
-
-//             display: flex;
-//             width: 50%;
-//             justify-self: center;
-//         }
-
-//         @include tablet {
-
-//             justify-self: flex-start;
-//             @include flex-wrap;
-//         }
-//     }
-
-//     .paragraph-container {
-
-//         @include mobile {
-
-//             display: inline-grid;
-//         }
-
-//         @include desktop {
-
-//             display: flex;
-//             width: 50%;
-//             justify-self: center;
-//         }
-
-//         @include tablet {
-
-//             width: 100%;
-//         }
-//         .paragraph1,
-//         .paragraph2 {
-
-//             display: table-cell;
-//             @include default-padding;
-//             @include darkgray-avenir;
-//             width: auto; 
-
-//             @include desktop {
-
-//                 font-size: xx-small;
-//             }
-
-//             @include tablet {
-
-//                 font-size: large;
-//             }
-//     }
-//     }
-// }
-// }
-
-// //
-
-// .gallery-section {
-
-//     @include default-padding;
-
-
+        display: flex;
+    }
     
-//     #photogallerytext {
+    @include tablet {
 
-//         @include bold-darkgray;
-//         padding-top:1.563rem;
-//     }
+        display: flex;
 
-//     .gallery {
+        .icons {
+            padding-right: 1rem;
+            margin-left: 2rem;
+            margin-top: .5rem;
+        }
+    }
 
-//         width: 15rem;
-//         height: auto;
+    &__text {
+    
+        @include bold-white;
+        font-size: 3.125rem;
+    }
 
-//         @include desktop {
+    .icons {
 
-//             width: 4rem;
-//         }
-//     }
+        height: 2rem;
 
-//     .gallery_container {
+        &__icon {
 
-//         background-color: $alabaster;
+            margin-right: 2rem;
+            height: -webkit-fill-available;
+        }
+    }
 
-//         @include mobile {
+    .bandsite-logo-footer { 
 
-//             display: inline-table;
-//             text-align: center;
-//         }
-
-//         @include desktop {
-            
-//             display: block;
-//             text-align: center;
-
-//         .top-row,
-//         .middle-row,
-//         .last-row {
-
-//             display: flex;
-//         }
-//         }  
-//     }
-// }
-
-// //
-
-// .comment-box {
-
-//     .comment-box__header{
-
-//         padding-top: 2rem;
-//         padding-bottom: 1.875rem;
-//         @include bold-darkgray;
-//         @include default-padding;
-//     }
-
-//     display:flex;
-//     flex-direction:column;
-
-//     &__form {
-
-//     display:flex;
-//     flex-direction: column;
-//     width: 60%;
-//     align-self: center;
-//     }
-
-//     &__input {
-
-//         border: 2px solid $darkgray;
-//         border-radius: .2rem;
-//         padding: .5rem;
-//     }
-//     &__text {
-
-//         border: 2px solid $darkgray;
-//         border-radius: .2rem;
-//         padding: 1rem;
+        height: 2rem;
         
-//         @include mobile {
+        &__img {
 
-//             width: -webkit-fill-available;
-//         }
-//     }
+            height: 1rem;
+        }
+        @include mobile {
+    
+            display: none;
+        }
+    
+        @include tablet {
+    
+            display: none;
+        }
+    }
+}
 
-//     &__label {
+//"bandsite" logo located in the footer//
+// .bandsite-logo-footer { 
 
-//         font-size: smaller;
-//         color: silver;
-//     }
+//     height: 1rem;
 
-// .comment-box-parent{
-//     display: flex;
-
-//     .avatar {
-//         border-radius: 50%;
-//         width: 2rem;
-//         height: 2rem;
-//         margin-top: .5rem;
-//         margin-right: 1rem;
-//     }
-
-//     .comment-parent{
-//         padding-top: 1rem;
-//         padding-bottom: .5rem;
-
-//         @include tablet {
-
-//             display: grid;
-//         }
-//     }
-//     .submit-button {
-//         text-align: end;
-
-//         &__button {
-            
-//             color: white;
-//             background-color: $darkgray;
-//             padding: .7rem;
-//             border-radius: .2rem;
-//         }
-//     }
-// }
-
-// .name-label-container {
-
-//     @include tablet {
-//         width: -webkit-fill-available;
-//     }
 //     @include mobile {
-//         width: -webkit-fill-available;
+
+//         display: none;
 //     }
 
-//     .label-parent {
-
-//         @include tablet {
-//             display: grid;
-//         }
-//     }
-// }
-
-// .comment-box__comments {
-
-//     display: inline-grid;
-//     align-self: center;
-// }
-// }
-
-// //
-
-
-// footer {
-
-//     background-color: $darkgray;
-// }
-
-// .getintouch {
-
-//     @include default-padding;
-//     padding-top: 3.125rem;
-//     padding-bottom: 1.25rem;
-
-//     @include desktop {
-
-//         display: flex;
-//     }
-    
 //     @include tablet {
 
-//         display: flex;
-
-//         .icons {
-//             padding-right: 1rem;
-//             margin-left: 2rem;
-//             margin-top: .5rem;
-//         }
-//     }
-
-//     &__text {
-    
-//         @include bold-white;
-//         font-size: 3.125rem;
-//     }
-
-//     .icons {
-
-//         height: 2rem;
-
-//         &__icon {
-
-//             margin-right: 2rem;
-//             height: -webkit-fill-available;
-//         }
-//     }
-
-//     .bandsite-logo-footer { 
-
-//         height: 2rem;
-        
-//         &__img {
-
-//             height: 1rem;
-//         }
-//         @include mobile {
-    
-//             display: none;
-//         }
-    
-//         @include tablet {
-    
-//             display: none;
-//         }
+//         display: none;
 //     }
 // }
 
-// //"bandsite" logo located in the footer//
-// // .bandsite-logo-footer { 
+.contacts__container {
 
-// //     height: 1rem;
+    @include default-padding;
+}
 
-// //     @include mobile {
+.subheader {
 
-// //         display: none;
-// //     }
-
-// //     @include tablet {
-
-// //         display: none;
-// //     }
-// // }
-
-// .contacts__container {
-
-//     @include default-padding;
-// }
-
-// .subheader {
-
-//     @include white-demi;
+    @include white-demi;
 
 
-//     @include desktop {
+    @include desktop {
 
-//         display: flex;
-//         width: 50%;
-//         justify-self: center;
-//     }
+        display: flex;
+        width: 50%;
+        justify-self: center;
+    }
     
-//     @include tablet {
+    @include tablet {
 
-//         display: flex;
-//     }
+        display: flex;
+    }
 
-//     &__richard--sub {
-//         @include white-avenir;
-//         padding-top: 2rem;
-//         padding-right: 2rem;
-//     }
-//     &__marsha--sub {
-//         @include white-avenir;
-//         padding-top: 2rem;
-//         padding-right: 2rem;
-//     }
-//     &__russel--sub {
-//         @include white-avenir;
-//         padding-top: 2rem;
-//         padding-right: 2rem;
-//     }
-// }
+    &__richard--sub {
+        @include white-avenir;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+    &__marsha--sub {
+        @include white-avenir;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+    &__russel--sub {
+        @include white-avenir;
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
+}
 
-//Shows Page//
 

@@ -164,7 +164,7 @@ span {
     justify-content: center;
     position: absolute;
     padding-left: 1rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 }
 
@@ -177,11 +177,104 @@ iframe {
 
 .shows-title {
   padding-top: 3.125rem;
-}
-
-#shows {
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
   color: #323232;
   font-family: "bold";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer {
+  background-color: #323232;
+}
+
+.getintouch {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3.125rem;
+  padding-bottom: 1.25rem;
+}
+@media screen and (min-width: 48.063em) and (max-height: 67.5em) {
+  .getintouch {
+    display: flex;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .getintouch {
+    display: flex;
+  }
+  .getintouch .icons {
+    padding-right: 1rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+}
+.getintouch__text {
+  color: white;
+  font-family: "bold";
+  font-size: 3.125rem;
+}
+.getintouch .icons {
+  height: 2rem;
+}
+.getintouch .icons__icon {
+  margin-right: 2rem;
+  height: -webkit-fill-available;
+}
+.getintouch .bandsite-logo-footer {
+  height: 2rem;
+}
+.getintouch .bandsite-logo-footer__img {
+  height: 1rem;
+}
+@media screen and (min-width: 23.438em) and (max-height: 41.688em) {
+  .getintouch .bandsite-logo-footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .getintouch .bandsite-logo-footer {
+    display: none;
+  }
+}
+
+.contacts__container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.subheader {
+  color: white;
+  font-family: "demi";
+}
+@media screen and (min-width: 48.063em) and (max-height: 67.5em) {
+  .subheader {
+    display: flex;
+    width: 50%;
+    justify-self: center;
+  }
+}
+@media screen and (min-width: 48em) and (max-height: 64em) {
+  .subheader {
+    display: flex;
+  }
+}
+.subheader__richard--sub {
+  color: white;
+  font-family: "Avenir";
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.subheader__marsha--sub {
+  color: white;
+  font-family: "Avenir";
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+.subheader__russel--sub {
+  color: white;
+  font-family: "Avenir";
+  padding-top: 2rem;
+  padding-right: 2rem;
 }/*# sourceMappingURL=styles.css.map */
