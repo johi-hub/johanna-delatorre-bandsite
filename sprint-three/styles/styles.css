@@ -105,7 +105,7 @@ span {
 }
 
 .shows-image {
-  background-image: url(../assets/images/show-background-image.jpg);
+  background-image: url("../assets/images/real-shows-background-image.jpg");
   background-size: cover;
   height: 50vh;
   display: flex;
@@ -147,6 +147,7 @@ span {
 }
 .shows-image__soundcloud {
   height: 10rem;
+  border-radius: 25px;
   font-size: 10px;
   color: #cccccc;
   line-break: anywhere;
@@ -172,35 +173,6 @@ iframe {
   width: -moz-fit-content;
   width: fit-content;
   height: 10rem;
-}
-
-.soundcloud-song__container {
-  font-size: 10px;
-  color: #cccccc;
-  line-break: anywhere;
-  word-break: normal;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
-  font-weight: 100;
-}
-
-#shows-image {
-  background-image: url(../../sprint-one/assets/images/neon-sign.jpg);
-}
-
-#shows-image-text {
-  color: white;
-  font-family: "bold";
-  font-size: xx-large;
-  font-weight: bolder;
-}
-
-.soundcloud-song__container {
-  display: flex;
-  align-self: flex-end;
-  width: 100%;
 }
 
 .shows-title {
