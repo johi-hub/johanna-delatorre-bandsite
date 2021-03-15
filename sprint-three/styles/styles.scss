@@ -19,6 +19,8 @@ span {
 }
 
 
+//Shows Page//
+
 //navbar//
 
 .navbar {
@@ -72,15 +74,13 @@ span {
     }
 }
 
-//Biography Page//
-
 //hero image//
 
-.hero-image {
+.shows-image {
 
-    background-image: url(../assets/images/concert_background_image.jpg); 
+    background-image: url(../assets/images/show-background-image.jpg); 
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
 
     @include mobile {
 
@@ -513,7 +513,7 @@ footer {
         width: 50%;
         justify-self: center;
     }
-
+    
     @include tablet {
 
         display: flex;
@@ -536,3 +536,37 @@ footer {
     }
 }
 
+//Shows Page//
+
+#shows-image {
+
+    background-image: url(../../sprint-one/assets/images/neon-sign.jpg);
+}
+
+#shows-image-text {
+
+    @include bold-white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+
+.soundcloud-song__container {
+
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.shows-title {
+
+    padding-top: 3.125rem;
+}
+
+#shows {
+
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+    @include bold-darkgray;
+}

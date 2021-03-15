@@ -9,16 +9,17 @@
 <body>
     <div class="navbar">
         <div class="navbar__container--left">
-            <img class="bandsite-logo" src="assets/logos/Logo-bandsite.png" alt="bandsite logo">
+            <img class="bandsite-logo" src="assets/logos/Logo-bandsite.png" alt="bandsite logo"></a>
         </div>
         <div class="navbar__container--right">
-            <div class="nav-button" id="button1"><link>Biography</div>
-            <div class="nav-button" id="button2"><link>Shows</div>
+            <div class="nav-button" id="button1"><a href="#biography">Biography</a></div>
+            <div class="nav-button" id="button2"><a href="pages/shows.html">Shows</a></div>
         </div>
     </div>
     <div class="hero-image"><div class="hero-image__text">Gaspard Auge & Xavier de Rosnay</div></div>
 
     <main>
+        <div class="aboutthemusicians">
         <div class="main__container--top">
             <h1 class="aboutthemusicians-text">About the Musicians</h1>
             <div class="aboutthemusicans-container">
@@ -27,11 +28,11 @@
         </div>
 
         <div class="main__container--bottom">
-            <h2 class="header2">"We are more comfortable with not fighting what comes naturally. Before we might have thought, 'We need to be smarter than this'"</h2>
+            <h2 class="header2">"We are more comfortable with not fighting what comes naturally. Before we might have thought, 'We need to be smarter than this"</h2>
             <h3 class="subheader"> -Xavier de Rosney</h3>
             <h2 class="header3">Xavier de Rosnay 7 Gaspard Auge</h2>
             <div class="paragraph-container">
-                <p class="paragraph1">Xavier De Ronsay and Gaspard Augé had a few 
+                <p class="paragraph1"><a id="biography"></a>Xavier De Ronsay and Gaspard Augé had a few 
                 mutual friends, who happened to run a record label, 
                 seeking tracks for a compilation. With an immediate 
                 connection, the pair decided to try their hand at 
@@ -55,7 +56,7 @@
                 his office, signing a record deal</p>
             </div>
         </div>
-        
+    </div>
     <div class="gallery-section">
         <h2 class="header2" id="photogallerytext">Photo Gallery</h2>
         <div class="gallery_container"> 
@@ -92,7 +93,9 @@
                     <label class="comment-box__label" for="comment">COMMENT</label>
                     <textarea class="comment-box__text" id="comment" name="comment"></textarea> 
                 </div>
-                <button type="submit">COMMENT</button>
+                <div class="submit-button">
+                    <button class="submit-button__button" type="submit">COMMENT</button>
+                </div>
             </div>
         </div>
     </form>
@@ -100,27 +103,38 @@
     </div>
     </main>
     <footer>
-        <h2 class="getintouch">Get In Touch</h2>
-            <div class="littleicons_container">
-                <img class="icons" src="assets/icons/Icon-instagram.png" alt="instagram-icon">
-                <img class="icons" src="assets/icons/Icon-facebook.png" alt="facebook-icon">
-                <img class="icons" src="assets/icons/Icon-twitter.png" alt="twitter-icon">
+        <div class= "getintouch">
+            <h2 class="getintouch__text">Get In Touch</h2>
+            <div class="icons">
+                <img class="icons__icon" src="assets/icons/Icon-instagram.png" alt="instagram-icon">
+                <img class="icons__icon" src="assets/icons/Icon-facebook.png" alt="facebook-icon">
+                <img class="icons__icon" src="assets/icons/Icon-twitter.png" alt="twitter-icon">
             </div>
-        <div class="getintouch__container">
+            <div class="bandsite-logo-footer">
+                <img class="bandsite-logo-footer__img" alt="bandsite-logo-footer" src="assets/logos/Logo-bandsite.png">
+            </div>
+        </div>
+        <div class="contacts__container">
         <div class="subheader">
-            <h3> Richard Rovner</h3>
-            <h3>The Bees Knees Management</h3>
-            <p class="subheader__richard--sub">460 King Street West <p>Toronto, Ontario M5V 1L7</p>
-            <p class="subheader__richard--sub">info@thebeesknees.com</p>
-            <p class="subheader__richard--sub">Copyright The Bees Knees C 2018 All Rights Reserved</p>
-            <h3 class="subheader-marsha">Marsha Vlasic</h3>
-            <h3 class="subheader-marsha">Artist Group International</h3>
-            <p class="subheader__marsha--sub">Booking Agent for US/South America/Japan</p>
-            <p class="subheader__marsha--sub">marsha.vlasic@artistgrp.com</p>
-            <h3 class="subheader-russel">Russel Warby</h3>
-            <h3 class="subheader-russel">William Morrir Entertainment</h3>
-            <p class="subheader__russel--sub">Booking Agent for UK/EU/AU</p>
-            <p class="subheader__russel--sub">RLW@wmeentertainment.com</p>
+            <div class="subheader__richard">
+                <h3> Richard Rovner</h3>
+                <h3>The Bees Knees Management</h3>
+                <p class="subheader__richard--sub">460 King Street West <p>Toronto, Ontario M5V 1L7</p>
+                <p class="subheader__richard--sub">info@thebeesknees.com</p>
+                <p class="subheader__richard--sub">Copyright The Bees Knees C 2018 All Rights Reserved</p>
+            </div>
+            <div class="subheader__marsha">
+                <h3 class="subheader-marsha">Marsha Vlasic</h3>
+                <h3 class="subheader-marsha">Artist Group International</h3>
+                <p class="subheader__marsha--sub">Booking Agent for US/South America/Japan</p>
+                <p class="subheader__marsha--sub">marsha.vlasic@artistgrp.com</p>
+            </div>
+            <div class="subheader__russel">
+                <h3 class="subheader-russel">Russel Warby</h3>
+                <h3 class="subheader-russel">William Morrir Entertainment</h3>
+                <p class="subheader__russel--sub">Booking Agent for UK/EU/AU</p>
+                <p class="subheader__russel--sub">RLW@wmeentertainment.com</p>
+            </div>
         </div>
         </div>
     </footer>
